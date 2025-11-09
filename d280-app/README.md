@@ -1,3 +1,19 @@
+# D280 - JavaScript Programming
+
+## Project Configuration Details
+
+**Student ID:** 012395726  
+**Angular CLI:** 20.3.9  
+**Node:** 24.11.0  
+**Package Manager:** npm 11.6.1  
+**OS:** macOS arm64  
+**Angular:** 20.3.x  
+
+> Verified using `ng version`
+
+
+
+
 # D280App
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
