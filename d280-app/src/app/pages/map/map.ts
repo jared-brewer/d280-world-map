@@ -13,5 +13,8 @@ import { Component } from '@angular/core';
   templateUrl: './map.html',
   styleUrls: ['./map.css']
 })
-export class MapComponent {}
+
+export class MapComponent {
+  selectedCountry: any = null;
+}
 

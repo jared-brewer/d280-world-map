@@ -1,13 +1,36 @@
 <p>map works!</p>
-<h1 style="text-align:center;">World Map Viewer</h1>
 
-<img
-  src="world-map.svg"
-  alt="World Map"
-  style="
-    width:100%;
-    max-width:800px;
-    display:block;
-    margin:auto;
-  "
->
+<!-- Div Wrap to help with CSS Columns-->
+<div class="container">
+    
+    <!-- Column 1: Map-->
+    <div class="map=column">
+        <h1 style="text-align:center;">World Map Viewer</h1>
+        
+        <img
+        src="world-map.svg"
+        alt="World Map"
+        style="
+            width:100%;
+            max-width:800px;
+            display:block;
+            margin:auto;
+        "
+        />
+    </div>
+    
+    <!-- Column 2: Country Information from Task C -->
+    <div class="info-column">
+        <h2>Country Information</h2>
+        <p>Select a Country to view details.</p>
+    
+    <!-- Placeholders for the Country Data -->
+    <p><strong>Name:</strong> {{ selectedCountry?.name }}</p>
+    <p><strong>Capital:</strong> {{ selectedCountry?.capitalCity }}</p>
+    <p><strong>Region:</strong> {{ selectedCountry?.region?.value }}</p>
+    <p><strong>Income Level:</strong> {{ selectedCountry?.incomeLevel?.value }}</p>
+    <p><strong>Latitude:</strong> {{ selectedCountry?.latitude }}</p>
+    <p><strong>Longitude:</strong> {{ selectedCountry?.longitude }}</p>
+
+    </div>
+</div>
