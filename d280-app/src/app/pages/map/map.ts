@@ -1,3 +1,11 @@
+// Task C: Selected World Bank API properties:
+// 1. name
+// 2. capitalCity
+// 3. region.value
+// 4. incomeLevel.value
+// 5. latitude
+// 6. longitude 
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +14,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./map.css']
 })
 export class MapComponent {}
-
 
