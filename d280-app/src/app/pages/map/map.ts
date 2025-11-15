@@ -13,8 +13,24 @@ import { Component } from '@angular/core';
   templateUrl: './map.html',
   styleUrls: ['./map.css']
 })
-
 export class MapComponent {
   selectedCountry: any = null;
-}
 
+  onCountryClick(event: MouseEvent) {
+    const element = event.target as SVGPathElement;
+
+    const countryName = element.getAttribute('name');
+    const countryCode = element.getAttribute('id');
+
+    console.log('Clicked country:', countryName, countryCode);
+
+    this.selectedCountry = {
+      name: countryName || '',
+      capitalCity: '',
+      region: { value: '' },
+      incomeLevel: { value: '' },
+      latitude: '',
+      longitude: ''
+    };
+  }
+}
